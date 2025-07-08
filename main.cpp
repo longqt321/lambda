@@ -5,8 +5,10 @@
 int main(){
     std::cout << "Hello\n";
     std::vector<size_t>sizes{2,2};
-    auto a = lambda::create(sizes);
-    std::cout << a(1,1);
+    auto a = lambda::ones(sizes);
+    auto b = lambda::ones(sizes);
+    a = a + b;
+    std::cout << (a.dot(b) + 10*a)(0,0);
     
     return 0;
 }
