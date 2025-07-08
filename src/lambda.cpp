@@ -5,6 +5,6 @@ lambda::lambda(){
     std::cout << "Constructor\n";
 }
 
-void lambda::matrix(){
-    std::cout << "Hello test\n";
+ndarray<double> lambda::create(const std::vector<size_t>& dims){
+    return ndarray<double>(dims);
 }
