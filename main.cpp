@@ -8,7 +8,7 @@ int main(){
     auto a = lambda::ones(sizes);
     auto b = lambda::ones(sizes);
     a = a + b;
-    std::cout << (a.dot(b) + 10*a)(0,0);
+    std::cout << (a.dot(b) + 11*a)(0,0);
     
     return 0;
 }

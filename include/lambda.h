@@ -10,6 +10,7 @@ class lambda{
         static ndarray<double> create(const std::vector<size_t>& dims);
         static ndarray<double> ones(const std::vector<size_t>& dims);
         static ndarray<double> zeros(const std::vector<size_t>& dims);
+        
         constexpr static double E = 2.718281828;
         constexpr static double EULER_GAMMA =  0.577215664;
         constexpr static double PI =  3.141592654;

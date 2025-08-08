@@ -19,3 +19,12 @@ ndarray<double> lambda::ones(const std::vector<size_t>& dims){
     }
     return result;
 }
+
+ndarray<double> lambda::zeros(const std::vector<size_t>& dims){
+    ndarray<double> result(dims);
+    for (size_t i = 0; i < result.n_elements; ++i) {
+        result.data[i] = 0.0;
+    }
+    return result;
+}
+
